@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+body {
+    background-color: #f4f7f6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'Inter', sans-serif;
+    color: #2b3452;
+}
+
+/* Premium Navbar */
+.navbar {
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+    background-color: #ffffff !important;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.03) !important;
+}
+.navbar-brand {
+    color: #0044ff !important;
+    font-size: 1.5rem;
+    letter-spacing: -0.5px;
+}
+.nav-link {
+    color: #4a5568 !important;
+    font-weight: 500;
+    padding: 0.5rem 1rem !important;
+    transition: color 0.2s;
+}
+.nav-link:hover {
+    color: #0044ff !important;
+}
+.navbar .btn-light {
+    background-color: #f0f4ff;
+    color: #0044ff !important;
+    border: none;
+    border-radius: 50px;
+}
+.navbar .btn-light:hover {
+    background-color: #0044ff;
+    color: #ffffff !important;
+}
+
+/* Premium Hero Section */
+.hero-section {
+    background: linear-gradient(135deg, #0044ff 0%, #001a75 100%);
+    position: relative;
+    overflow: hidden;
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    margin-top: -1px;
+}
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MDAiIGhlaWdodD0iNDAwIiBmaWxsPSJub25lIj48Y2lyY2xlIGN4PSIyMDAiIGN5PSIyMDAiIHI9IjIwMCIgZmlsbD0id2hpdGUiIGZpbGwtb3BhY2l0eT0iMC4wNSIvPjwvc3ZnPg==') no-repeat right top;
+    pointer-events: none;
+}
+.search-card {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: #0044ff;
+    border-color: #0044ff;
+}
+.btn-primary:hover {
+    background-color: #0036cc;
+    border-color: #0036cc;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 68, 255, 0.3);
+}
+
+/* Category Cards */
+.category-card {
+    transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+    cursor: pointer;
+}
+.category-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0, 68, 255, 0.08) !important;
+    border-bottom: 3px solid #0044ff;
+}
+.category-card .icon-circle {
+    transition: all 0.3s ease;
+}
+.category-card:hover .icon-circle {
+    background-color: #0044ff !important;
+    color: white !important;
+}
+
+/* Job Cards */
+.job-card {
+    transition: all 0.3s ease;
+    border: 1px solid rgba(0,0,0,0.03) !important;
+}
+.job-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.06) !important;
+}
+.job-card .apply-text {
+    opacity: 0;
+    transform: translateX(-10px);
+    transition: all 0.3s ease;
+}
+.job-card:hover .apply-text {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.min-vh-100 {
+    min-height: calc(100vh - 200px) !important;
+}
+
+/* Footer styling update */
+footer {
+    background-color: #1a1e2d !important;
+    border-top: 1px solid rgba(255,255,255,0.05);
+}
